@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><title>お席のご予約 | Café harmony</title><style>
+:root{--ink:#2b1e16;--muted:#73655b;--cream:#fcf9f3;--surface:#fff;--line:#e8e1d5;--sage:#57624c;--terra:#a96342}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Noto Sans JP',sans-serif;font-size:15px;line-height:1.7}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}header.site{background:rgba(252,249,243,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.shell{max-width:1100px;margin:auto;padding:0 24px}.navline{min-height:73px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font:600 22px 'Noto Serif JP',serif;letter-spacing:-.03em}.nav{display:flex;align-items:center;gap:28px;font-size:13px}.nav a:hover,.footerlinks a:hover{color:var(--terra)}.nav .current{color:var(--terra);font-weight:700}.pill{background:var(--terra);color:white;border-radius:100px;padding:9px 20px;font-weight:600}.hero{padding:62px 0 36px}.eyebrow{text-transform:uppercase;color:var(--terra);font-size:11px;font-weight:700;letter-spacing:.18em}.serif{font-family:'Noto Serif JP',serif;font-weight:500}.hero h1{font-size:clamp(30px,4.2vw,44px);letter-spacing:-.04em;margin:10px 0}.hero p{color:var(--muted);margin:0}.steps{display:flex;align-items:center;gap:12px;margin:30px 0 0;color:#8b8179;font-size:12px}.step{display:flex;align-items:center;gap:8px}.step .num{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid #cdc4bc}.step.active{color:var(--terra);font-weight:700}.step.active .num{background:var(--terra);color:white;border-color:var(--terra)}.connector{width:46px;height:1px;background:#d8d0c8}.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,1fr);gap:28px;align-items:start;padding-bottom:85px}.panel{background:white;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 32px rgba(43,30,22,.04);overflow:hidden}.panel-pad{padding:30px}.panel h2{font:500 22px 'Noto Serif JP',serif;margin:0 0 9px}.sub{font-size:13px;color:var(--muted);margin:0 0 26px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;display:block;margin-bottom:8px}.required{color:var(--terra);font-size:11px;margin-left:5px}.field input,.field select,.field textarea{width:100%;border:1px solid #d9d0c7;border-radius:9px;background:#fff;padding:12px 13px;min-height:49px;color:var(--ink);outline:none;transition:border .15s,box-shadow .15s}.field textarea{min-height:100px;resize:vertical}.field :is(input,select,textarea):focus{border-color:var(--terra);box-shadow:0 0 0 3px rgba(169,99,66,.12)}.field small{color:#81766e;display:block;margin-top:5px;font-size:11px}.rule{border:0;border-top:1px solid var(--line);margin:30px 0}.actions{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:30px}.primary{border:none;display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;border-radius:100px;padding:14px 24px;font-weight:700;min-height:52px}.primary:hover{background:#513c30}.secondary{background:white;border:1px solid #d9d0c7;color:var(--ink);padding:13px 22px;border-radius:100px;font-weight:600}.help{font-size:12px;color:var(--muted)}.side-img{width:100%;height:190px;object-fit:cover}.side-content{padding:23px}.side-content h3{font:500 19px 'Noto Serif JP',serif;margin:0 0 14px}.side-content dl,.details{margin:0}.side-content dl div{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid #eee8e1;font-size:13px}.side-content dt{color:var(--muted)}.side-content dd{margin:0;text-align:right;font-weight:600}.notice{padding:14px 16px;background:#f3f0e9;border-left:3px solid var(--sage);border-radius:4px;color:#60564e;font-size:12px;line-height:1.7;margin-top:22px}.details{display:grid;grid-template-columns:145px 1fr}.details dt,.details dd{margin:0;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;word-break:break-word}.details dt{color:var(--muted)}.details dd{font-weight:600}.form-hidden{display:none!important}.checkline{display:flex;gap:10px;align-items:flex-start;margin-top:22px;font-size:12px;color:var(--muted)}.checkline input{accent-color:var(--terra);margin-top:4px}.finish{max-width:720px;margin:66px auto 94px;text-align:center}.done-mark{display:grid;place-items:center;margin:auto auto 24px;width:72px;height:72px;border-radius:50%;background:#e5ecdc;color:var(--sage);font-size:37px}.finish h1{font:500 clamp(29px,4vw,40px) 'Noto Serif JP',serif;margin:5px 0 17px}.finish p{color:var(--muted)}.finish .panel{text-align:left;margin:35px 0 28px}.center{text-align:center}.footer{border-top:1px solid var(--line);background:#f0eee8;padding:36px 0;font-size:12px;color:var(--muted)}.footrow{display:flex;justify-content:space-between;gap:25px}.footerlinks{display:flex;flex-wrap:wrap;gap:16px}.mobile-nav{display:none}@media(max-width:760px){.nav{display:none}.mobile-nav{display:flex;gap:13px;overflow-x:auto;padding:0 24px 12px;font-size:12px}.navline{min-height:65px}.layout{grid-template-columns:1fr}.hero{padding-top:40px}.panel-pad{padding:24px 20px}.side-img{height:150px}.footrow{flex-direction:column}.steps{gap:7px}.connector{width:20px}}@media(max-width:470px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.actions{flex-direction:column-reverse;align-items:stretch}.actions>*{width:100%;text-align:center}.details{grid-template-columns:108px 1fr}}
+</style><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#be7653",
+            "secondary": "#57624c",
+            "primary": "#110703",
+            "inverse-primary": "#d9c2b5",
+            "secondary-fixed-dim": "#bfcbb0",
+            "tertiary-container": "#3d1400",
+            "primary-fixed-dim": "#d9c2b5",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#dbe7cb",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed-variant": "#703719",
+            "on-tertiary-fixed": "#351000",
+            "surface": "#fcf9f3",
+            "outline": "#80756f",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#5d6852",
+            "on-primary-fixed": "#251911",
+            "surface-variant": "#e5e2dc",
+            "surface-container-highest": "#e5e2dc",
+            "on-primary": "#ffffff",
+            "primary-container": "#2b1e16",
+            "inverse-surface": "#31312d",
+            "on-surface-variant": "#4e4540",
+            "inverse-on-surface": "#f3f0ea",
+            "on-surface": "#1c1c18",
+            "tertiary-fixed": "#ffdbcc",
+            "surface-bright": "#fcf9f3",
+            "on-primary-fixed-variant": "#54433a",
+            "on-background": "#1c1c18",
+            "outline-variant": "#d2c4bd",
+            "on-primary-container": "#988479",
+            "surface-container": "#f0eee8",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb693",
+            "on-error": "#ffffff",
+            "tertiary": "#170400",
+            "surface-container-low": "#f6f3ed",
+            "secondary-container": "#dbe7cb",
+            "on-secondary-fixed": "#151e0d",
+            "background": "#fcf9f3",
+            "surface-container-high": "#ebe8e2",
+            "surface-dim": "#dcdad4",
+            "on-secondary-fixed-variant": "#404a36",
+            "error": "#ba1a1a",
+            "surface-tint": "#6c5b51",
+            "primary-fixed": "#f6ded1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-lg": "1.75rem",
+            "space-xl": "3rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-md": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-sm": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-xl-mobile": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-xl": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "label-lg": ["0.9375rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.4rem", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script><style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    .ceramic-shadow {
+      box-shadow: 0 10px 30px -10px rgba(43, 30, 22, 0.08);
+    }
+    .soft-border {
+      border: 1px solid #E8E1D5;
+    }
+  </style></head><body><div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawerBackdrop"></div><aside class="fixed inset-y-0 left-0 w-72 max-w-full z-50 bg-surface-container-low text-primary border-r border-outline-variant/30 shadow-lg -translate-x-full transition-transform duration-300 ease-in-out flex flex-col h-full py-space-lg px-gutter-mobile" id="navDrawer">
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+<a class="font-headline-sm text-headline-sm text-primary tracking-tight hover:text-on-tertiary-container transition-colors" href="index.html">Café harmony</a>
+<button aria-label="メニューを閉じる" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-space-xs mt-space-md">
+<a aria-current="page" class="bg-secondary-container text-on-secondary-container rounded-lg font-medium px-space-md py-space-sm transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="index.html"><span class="material-symbols-outlined text-on-tertiary-container">home</span><span>トップ</span></a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="menu.html">
+<span class="material-symbols-outlined text-on-tertiary-container">restaurant_menu</span>
+<span>メニュー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="news.html">
+<span class="material-symbols-outlined text-secondary">event_note</span>
+<span>季節のおしらせ</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="story.html">
+<span class="material-symbols-outlined text-on-secondary-container">coffee</span>
+<span>こだわり・ストーリー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="access.html">
+<span class="material-symbols-outlined text-on-tertiary-container">location_on</span>
+<span>店舗・アクセス</span>
+</a>
+</nav>
+<div class="mt-auto pt-space-lg border-t border-outline-variant/30">
+<a class="w-full inline-flex items-center justify-center gap-space-xs bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg py-space-sm px-space-md rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-all" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>席を予約する</span>
+</a>
+</div>
+</aside><header class="bg-surface docked full-width top-0 sticky z-40 border-b border-outline-variant/30 shadow-sm backdrop-blur-md bg-opacity-95">
+<div class="flex items-center justify-between px-gutter-mobile md:px-gutter max-w-7xl mx-auto w-full h-16">
+<!-- Left: Hamburger Drawer Trigger & Brand Logo -->
+<div class="flex items-center gap-space-sm">
+<button aria-label="ナビゲーションメニューを開く" class="p-2 -ml-2 rounded-lg text-primary hover:bg-surface-container transition-colors focus:outline-none" id="openDrawerBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="flex items-center gap-2 group" href="index.html">
+<span class="material-symbols-outlined text-on-tertiary-container transition-transform group-hover:rotate-12 duration-300">local_cafe</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Café harmony</span>
+</a>
+</div>
+<!-- Center: Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="story.html">ストーリー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="menu.html">メニュー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="news.html">季節のおしらせ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="access.html">店舗情報</a>
+</nav>
+<!-- Right: Primary CTA (Table reservation button) -->
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg px-4 py-2 rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-transform duration-150" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+<span class="tracking-wide">席を予約する</span>
+</a>
+</div>
+</div>
+</header><main class="shell"><section class="hero"><span class="eyebrow">Reservation</span><h1 class="serif">お席のご予約</h1><p>ご希望の日時と人数をお知らせください。</p><div class="steps"><div class="step active" id="step-one"><span class="num">1</span>情報入力</div><div class="connector"></div><div class="step" id="step-two"><span class="num">2</span>内容確認</div><div class="connector"></div><div class="step"><span class="num">3</span>完了</div></div></section><div class="layout"><div class="panel"><div class="panel-pad"><form id="reserveForm"><div id="formView"><h2>ご予約内容</h2><p class="sub">必要事項をご入力ください。<span class="required">* 必須項目</span></p><div class="form-grid"><div class="field"><label for="date">ご来店日 <span class="required">*</span></label><input id="date" name="date" required="" type="date"/></div><div class="field"><label for="time">ご来店時間 <span class="required">*</span></label><select id="time" name="time" required=""><option value="">時間を選択</option></select></div><div class="field"><label for="guests">人数 <span class="required">*</span></label><select id="guests" name="guests" required=""><option value="">人数を選択</option><option value="1">1名</option><option value="2">2名</option><option value="3">3名</option><option value="4">4名</option><option value="5">5名</option><option value="6">6名</option><option value="7">7名</option><option value="8">8名</option></select><small>9名以上はお電話でご相談ください。</small></div><div class="field"><label for="seating">お席のご希望</label><select id="seating" name="seating"><option value="指定なし">指定なし</option><option value="テーブル席">テーブル席</option><option value="カウンター席">カウンター席</option><option value="テラス席">テラス席</option></select><small>席の希望は確約ではありません。</small></div></div><hr class="rule"/><h2>お客様情報</h2><p class="sub">確認画面に表示する情報です。外部には送信されません。</p><div class="form-grid"><div class="field full"><label for="name">お名前 <span class="required">*</span></label><input autocomplete="name" id="name" maxlength="80" name="name" placeholder="例：山田 花子" required=""/></div><div class="field"><label for="phone">お電話番号 <span class="required">*</span></label><input autocomplete="tel" id="phone" inputmode="tel" name="phone" pattern="[0-9+()\-\s]{9,20}" placeholder="例：045-123-4567" required="" type="tel"/></div><div class="field"><label for="email">メールアドレス <span class="required">*</span></label><input autocomplete="email" id="email" name="email" placeholder="example@mail.com" required="" type="email"/></div><div class="field full"><label for="request">ご要望・連絡事項（任意）</label><textarea id="request" maxlength="500" name="request" placeholder="アレルギーやご相談があればご記入ください"></textarea></div></div><div class="actions"><a class="secondary" href="index.html">トップへ戻る</a><button class="primary" type="submit">入力内容を確認する →</button></div></div><div class="form-hidden" id="confirmView"><span class="eyebrow">Confirm details</span><h2>ご予約内容の確認</h2><p class="sub">以下の内容をご確認ください。まだ予約は送信されません。</p><dl class="details" id="summary"></dl><label class="checkline"><input id="acknowledge" type="checkbox"/><span>このサイトはデモであり、実際の予約は成立しないことを確認しました。</span></label><div class="actions"><button class="secondary" id="back" type="button">← 入力内容を修正する</button><button class="primary" id="complete" type="button">デモを完了する →</button></div></div></form></div></div><aside class="panel"><img alt="Café harmony 外観" class="side-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuXmSQNlnT-gry8cJPUhHpaUnn3C82ullKBj8jKROd1yrWDeRWhnBO9CKyg1ioRxffqMHUS00mAt-IBOYwnWAHEcgA-HtSQ1nr5W2xXxaOCUWNQU7vU5t_kiU7D9NIYKQpAm6PXfpxmjY2sKiFsH9KJWJ-XJ9zQuDM4ZhnxGv1g30s1q5YSm01CJ-zUDLEioqYVDL9igciMjhp9mk0_PWBIKHtIlPspXpn_1X8kRDL1gKSdWIFiw"/><div class="side-content"><h3>ご来店のご案内</h3><dl><div><dt>営業時間</dt><dd>10:00〜19:00</dd></div><div><dt>定休日</dt><dd>水曜日</dd></div><div><dt>最寄り駅</dt><dd>反町駅 徒歩8分</dd></div><div><dt>住所</dt><dd>神奈川県横浜市神奈川区<br/>反町一丁目１５</dd></div><div><dt>電話</dt><dd><a href="tel:0451234567">045-123-4567</a></dd></div></dl><div class="notice">このページは予約体験用のデモです。実店舗への予約登録やメール送信は行われません。</div></div></aside></div></main><footer class="bg-surface-container border-t border-outline-variant/30 text-on-surface">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter py-space-xl flex flex-col gap-space-lg">
+<!-- Top Section: Brand + Store Info + Links -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Brand Logo & Concept Summary -->
+<div class="lg:col-span-5">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-on-tertiary-container">local_cafe</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">Café harmony</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed mb-6">
+            日常に、心地よい調和と温もりを。<br/>
+            厳選したスペシャリティコーヒーと手作りのお菓子で、静かで満たされたひとときをお届けするクラフトカフェです。
+          </p>
+<!-- SNS Icons -->
+<div class="flex items-center gap-3 text-on-surface-variant">
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- X (Twitter) -->
+<a aria-label="X (旧Twitter)" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- LINE -->
+<a aria-label="LINE" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</a>
+</div>
+</div>
+<!-- Middle: Store Information -->
+<div class="lg:col-span-4">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">店舗情報</h4>
+<dl class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+<dt class="inline text-primary font-medium">営業時間：</dt>
+<dd class="inline">10:00〜19:00 (L.O. 18:30)</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">定休日：</dt>
+<dd class="inline">水曜日</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">所在地：</dt>
+<dd class="inline">神奈川県横浜市神奈川区反町一丁目１５</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">電話番号：</dt>
+<dd class="inline"><a class="hover:text-on-tertiary-container transition-colors" href="tel:0451234567">045-123-4567</a></dd>
+</div>
+</dl>
+</div>
+<!-- Right: Links List -->
+<div class="lg:col-span-3">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">ナビゲーション</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="index.html">トップページ</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="story.html">こだわり・ストーリー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="menu.html">こだわりメニュー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="news.html">季節のおしらせ・イベント</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="access.html">店舗情報・アクセス</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="reservation.html">席を予約する</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="#">プライバシーポリシー</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar: Copyright -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-outline gap-4">
+<span>© Café harmony. All rights reserved.</span>
+<span>Crafted with peace and care in Yokohama.</span>
+</div>
+</div>
+</footer><script>
+const form=document.getElementById('reserveForm'),date=document.getElementById('date'),time=document.getElementById('time');
+const localNow=new Date();const today=[localNow.getFullYear(),String(localNow.getMonth()+1).padStart(2,'0'),String(localNow.getDate()).padStart(2,'0')].join('-');date.min=today;
+for(let h=10;h<=18;h++)for(const m of [0,30]){if(h===18&&m>0)break;const val=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;const o=document.createElement('option');o.value=val;o.textContent=val;time.appendChild(o)}
+const labels={date:'ご来店日',time:'ご来店時間',guests:'人数',seating:'お席のご希望',name:'お名前',phone:'お電話番号',email:'メールアドレス',request:'ご要望'};
+let payload={};function steps(confirm){document.getElementById('step-one').classList.toggle('active',!confirm);document.getElementById('step-two').classList.toggle('active',confirm);document.getElementById('formView').classList.toggle('form-hidden',confirm);document.getElementById('confirmView').classList.toggle('form-hidden',!confirm);scrollTo({top:0,behavior:'smooth'})}
+form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;if(date.value<today){date.setCustomValidity('今日以降の日付を選んでください');date.reportValidity();return}date.setCustomValidity('');payload=Object.fromEntries(new FormData(form).entries());const dl=document.getElementById('summary');dl.replaceChildren();for(const [key,label] of Object.entries(labels)){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=key==='guests'?payload[key]+'名':payload[key]||'なし';dl.append(dt,dd)}document.getElementById('acknowledge').checked=false;steps(true)});
+date.addEventListener('input',()=>date.setCustomValidity(''));
+document.getElementById('back').addEventListener('click',()=>steps(false));
+document.getElementById('complete').addEventListener('click',()=>{if(!document.getElementById('acknowledge').checked){document.getElementById('acknowledge').reportValidity();return}sessionStorage.setItem('cafeHarmonyDemoReservation',JSON.stringify(payload));location.href='thanks.html'});
+</script><script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openBtn = document.getElementById('openDrawerBtn');
+      const closeBtn = document.getElementById('closeDrawerBtn');
+      const drawer = document.getElementById('navDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+
+      function openDrawer() {
+        drawer.classList.remove('-translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeDrawer() {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      // Close on navigation click inside drawer
+      const drawerLinks = drawer.querySelectorAll('a');
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script></body></html>

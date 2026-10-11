@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Café harmony | 日常に、心地よい調和と温もりを。</title>
+<!-- Google Fonts: Noto Serif JP & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#be7653",
+            "secondary": "#57624c",
+            "primary": "#110703",
+            "inverse-primary": "#d9c2b5",
+            "secondary-fixed-dim": "#bfcbb0",
+            "tertiary-container": "#3d1400",
+            "primary-fixed-dim": "#d9c2b5",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#dbe7cb",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed-variant": "#703719",
+            "on-tertiary-fixed": "#351000",
+            "surface": "#fcf9f3",
+            "outline": "#80756f",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#5d6852",
+            "on-primary-fixed": "#251911",
+            "surface-variant": "#e5e2dc",
+            "surface-container-highest": "#e5e2dc",
+            "on-primary": "#ffffff",
+            "primary-container": "#2b1e16",
+            "inverse-surface": "#31312d",
+            "on-surface-variant": "#4e4540",
+            "inverse-on-surface": "#f3f0ea",
+            "on-surface": "#1c1c18",
+            "tertiary-fixed": "#ffdbcc",
+            "surface-bright": "#fcf9f3",
+            "on-primary-fixed-variant": "#54433a",
+            "on-background": "#1c1c18",
+            "outline-variant": "#d2c4bd",
+            "on-primary-container": "#988479",
+            "surface-container": "#f0eee8",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb693",
+            "on-error": "#ffffff",
+            "tertiary": "#170400",
+            "surface-container-low": "#f6f3ed",
+            "secondary-container": "#dbe7cb",
+            "on-secondary-fixed": "#151e0d",
+            "background": "#fcf9f3",
+            "surface-container-high": "#ebe8e2",
+            "surface-dim": "#dcdad4",
+            "on-secondary-fixed-variant": "#404a36",
+            "error": "#ba1a1a",
+            "surface-tint": "#6c5b51",
+            "primary-fixed": "#f6ded1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-lg": "1.75rem",
+            "space-xl": "3rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-md": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-sm": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Noto Serif", "Noto Serif JP", "serif"],
+            "headline-xl-mobile": ["Noto Serif", "Noto Serif JP", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-xl": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "label-lg": ["0.9375rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.4rem", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    .ceramic-shadow {
+      box-shadow: 0 10px 30px -10px rgba(43, 30, 22, 0.08);
+    }
+    .soft-border {
+      border: 1px solid #E8E1D5;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed font-body-md text-body-md overflow-x-hidden">
+<!-- Mobile Drawer Overlay & Container (Shared Component) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawerBackdrop"></div>
+<aside class="fixed inset-y-0 left-0 w-72 max-w-full z-50 bg-surface-container-low text-primary border-r border-outline-variant/30 shadow-lg -translate-x-full transition-transform duration-300 ease-in-out flex flex-col h-full py-space-lg px-gutter-mobile" id="navDrawer">
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+<a class="font-headline-sm text-headline-sm text-primary tracking-tight hover:text-on-tertiary-container transition-colors" href="index.html">Café harmony</a>
+<button aria-label="メニューを閉じる" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-space-xs mt-space-md">
+<a aria-current="page" class="bg-secondary-container text-on-secondary-container rounded-lg font-medium px-space-md py-space-sm transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="index.html"><span class="material-symbols-outlined text-on-tertiary-container">home</span><span>トップ</span></a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="menu.html">
+<span class="material-symbols-outlined text-on-tertiary-container">restaurant_menu</span>
+<span>メニュー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="news.html">
+<span class="material-symbols-outlined text-secondary">event_note</span>
+<span>季節のおしらせ</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="story.html">
+<span class="material-symbols-outlined text-on-secondary-container">coffee</span>
+<span>こだわり・ストーリー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="access.html">
+<span class="material-symbols-outlined text-on-tertiary-container">location_on</span>
+<span>店舗・アクセス</span>
+</a>
+</nav>
+<div class="mt-auto pt-space-lg border-t border-outline-variant/30">
+<a class="w-full inline-flex items-center justify-center gap-space-xs bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg py-space-sm px-space-md rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-all" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>席を予約する</span>
+</a>
+</div>
+</aside>
+<!-- 1. Common Header (共通ヘッダー) -->
+<header class="bg-surface docked full-width top-0 sticky z-40 border-b border-outline-variant/30 shadow-sm backdrop-blur-md bg-opacity-95">
+<div class="flex items-center justify-between px-gutter-mobile md:px-gutter max-w-7xl mx-auto w-full h-16">
+<!-- Left: Hamburger Drawer Trigger & Brand Logo -->
+<div class="flex items-center gap-space-sm">
+<button aria-label="ナビゲーションメニューを開く" class="p-2 -ml-2 rounded-lg text-primary hover:bg-surface-container transition-colors focus:outline-none" id="openDrawerBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="flex items-center gap-2 group" href="index.html">
+<span class="material-symbols-outlined text-on-tertiary-container transition-transform group-hover:rotate-12 duration-300">local_cafe</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Café harmony</span>
+</a>
+</div>
+<!-- Center: Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="story.html">ストーリー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="menu.html">メニュー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="news.html">季節のおしらせ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="access.html">店舗情報</a>
+</nav>
+<!-- Right: Primary CTA (Table reservation button) -->
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg px-4 py-2 rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-transform duration-150" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+<span class="tracking-wide">席を予約する</span>
+</a>
+</div>
+</div>
+</header>
+<!-- 2. Hero Visual + Catchcopy (主役ビジュアル＋キャッチコピー) -->
+<section class="relative overflow-hidden pt-6 pb-16 md:pt-12 md:pb-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left: Catchcopy & Narrative CTA -->
+<div class="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 self-start bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+<span>職人が紡ぐ自家焙煎と手仕事</span>
+</div>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary font-medium tracking-tight mb-4 leading-tight">
+            日常に、心地よい<br class="hidden md:inline"/>
+<span class="text-on-tertiary-container relative inline-block">
+              調和と温もり
+              <span class="absolute bottom-1 left-0 right-0 h-2 bg-on-tertiary-container/15 -z-10 rounded"></span>
+</span>を。
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8 max-w-xl">
+            厳選したスペシャリティコーヒーと、季節の手作りスイーツで過ごす穏やかなひととき。焙煎されたばかりの香気と、窓辺の柔らかな光があなたを包み込みます。
+          </p>
+<!-- CTA Buttons Cluster -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 bg-primary-container text-surface-bright font-label-lg text-label-lg px-7 py-3.5 rounded-full shadow-md hover:bg-primary transition-all duration-200 text-center" href="menu.html">
+<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+<span>メニューを見る</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-surface-container text-primary font-label-lg text-label-lg px-7 py-3.5 rounded-full soft-border hover:bg-surface-container-high transition-all duration-200 text-center" href="reservation.html">
+<span class="material-symbols-outlined text-[20px] text-on-tertiary-container">schedule</span>
+<span>オンライン予約</span>
+</a>
+</div>
+<!-- Micro Sensory Matrix -->
+<div class="mt-10 pt-6 border-t border-outline-variant/30 flex items-center gap-4 text-on-surface-variant">
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-block px-2.5 py-1 bg-surface-container rounded font-label-sm text-label-sm">Stone Fruit</span>
+<span class="inline-block px-2.5 py-1 bg-surface-container rounded font-label-sm text-label-sm">Honeycomb</span>
+<span class="inline-block px-2.5 py-1 bg-surface-container rounded font-label-sm text-label-sm">Bergamot</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant/80">本日の焙煎ブレンドノート</span>
+</div>
+</div>
+<!-- Right: Asymmetric Editorial Visual -->
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Background Ceramic Backdrop Blob -->
+<div class="absolute -inset-4 bg-surface-container-high rounded-3xl transform rotate-1 -z-10"></div>
+<div class="overflow-hidden rounded-2xl ceramic-shadow soft-border bg-surface-container-lowest">
+<img alt="Café harmony の珈琲と自家製スイーツ" class="w-full h-[360px] md:h-[480px] object-cover hover:scale-105 transition-transform duration-700 ease-out" data-alt="An artisanal quiet cafe interior flooded with morning warm sunlight. In focus is a handcrafted ceramic dripper with fresh dark roast coffee dripping into a clear glass carafe, accompanied by a golden flaky seasonal scone on a rustic stoneware plate. Deep rich espresso brown woods, linen tablecloth, and soft natural terracotta undertones render an inviting and peaceful Japanese editorial atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC52vXJzX416N_wI4m2hqdPysJjhdaLezli7GjkfDFj7LVLBarZyC-1NScnf37FKfv9tpikPhot1HID53HdwTYIsENkNuI89C0CmwdRoWuNR1-sug-KQIyueB69leUz7i4mUUf6VihcTWx5wi1GEz4p5R4sLs4SBnQSehwl-PMYv5sf9P5kXKpNmW_l9IRrUgJrXvzzS6IIQknxCVspFWWaOvdVLxnHmArHzZsXrKaz7b1l6HDw5g"/>
+</div>
+<!-- Floating Editorial Tag Card -->
+<div class="absolute -bottom-6 -left-4 sm:left-6 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl soft-border ceramic-shadow flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">Open Morning &amp; Afternoon</p>
+<p class="font-headline-sm text-body-md font-semibold text-primary">10:00 - 19:00 (L.O. 18:30)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. About Us / Story (お店紹介) -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30" id="story-section">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-md text-label-md text-on-tertiary-container tracking-wider block mb-2">About Café harmony</span>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary font-medium">私たちのこだわり</h2>
+<div class="w-12 h-0.5 bg-on-tertiary-container mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Narrative & Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Visual Column with Overlap -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-2xl overflow-hidden soft-border ceramic-shadow bg-surface-container-lowest">
+<img alt="こだわりのハンドドリップ風景" class="w-full h-80 lg:h-96 object-cover" data-alt="A focused master barista gently pouring hot water from a bronze gooseneck kettle onto fresh dark roasted coffee grounds in a ceramic filter. Warm sun beams illuminate the steam rising from the brew. Authentic wooden counter, clean minimalist ceramic vessels, deep espresso and warm earthy tones in a calm artisanal cafe space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7CiBO9uepetDW-LuHkoV7lbt46R2Exg8B7SFAP2w306AavatnLmmHdHHRP8LGI6afxjrokYMF53aj3pIqX_UWY-vN1Tnkvdc42OkuPEEGbwgbwEJCh_arlnyj3ndQUIJpZt2msczL-GNxPL_y6jyiPoBIy_Tzh5SEyM-1JYDlzMZswrs-wZdhskiNcn90sCSQMQr9wC06Ockxc2n3PCYGw5gN_GJCqoLw8C6hK1Y_DnePhE_fA"/>
+</div>
+<div class="hidden sm:block absolute -bottom-6 -right-6 w-44 h-44 rounded-2xl overflow-hidden soft-border ceramic-shadow">
+<img alt="自家焙煎の厳選珈琲豆" class="w-full h-full object-cover" data-alt="Close up shot of fresh raw green coffee beans and evenly roasted deep brown coffee beans lying on a textured unbleached linen fabric with a small vintage brass measuring spoon. Warm natural studio lighting with rustic shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1HtMdploRoE8VcNbv4bVDMDAJK2PsOdKhpbhutW9XZfrErCniEgq7t9iaLIBcT-Pc8F5ZvkOBy4HZNkIkkLVFWoTvmG8cuF13MZuNnLvJyiOVdj98n1u6SaDMzW7cmm-6fCwp58n1Spm9bsPYwtep1GdrVL3cV0KbqaE8Nmct9TovjGWCJsOFSp9_2Ss56NTQaz3f-crvr0GLGYz5tVASloVN0zhTx5t8wlw0ibyzBtJpS0vTcw"/>
+</div>
+</div>
+<!-- Content & Badges Column -->
+<div class="lg:col-span-7 lg:pl-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-5 leading-snug">
+            一杯の珈琲がほどく、<br class="hidden sm:inline"/>日々のささやかな緊張と呼吸。
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            豆選びから焙煎、淹れ方にまで心を込めた自家焙煎珈琲。地元の旬の素材を活かした素朴で優しい焼き菓子。<br class="hidden md:inline"/>
+            木漏れ日が差し込む落ち着いた店内で、忙しい日常から少し離れて、心ほどける時間をお届けします。
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8">
+            私たちは器の触感、流れる音楽の音量、店内の余白に至るまで、お客様が肩の力を抜いてくつろげる「調和（harmony）」を大切に紡いでいます。
+          </p>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container font-label-lg text-label-lg mb-8 hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-on-tertiary-container" href="story.html">
+こだわり・ストーリーを詳しく読む <span aria-hidden="true" class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Visual Badges / Feature Points -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl soft-border hover:border-outline transition-colors">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-tertiary-container mb-3">
+<span class="material-symbols-outlined text-[22px]">coffee</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary mb-1">自家焙煎スペシャリティ豆</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">世界各国のシングルオリジンを少量ずつ丁寧に直火焙煎。</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl soft-border hover:border-outline transition-colors">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-3">
+<span class="material-symbols-outlined text-[22px]">bakery_dining</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary mb-1">無添加の自家製スイーツ</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">旬の果実と純良なバターを使った素朴な手作りタルトとスコーン。</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl soft-border hover:border-outline transition-colors">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[22px]">volume_down</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary mb-1">心地よい音楽と静穏な空間</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">本を読み、物思いに耽るための静かで穏やかな余白のひととき。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Entry Cards to Each Sub-page (各ページへの入口カード) -->
+<section class="py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-md text-label-md text-on-tertiary-container tracking-wider block mb-1">Explore</span>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary font-medium">コンテンツ</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0 max-w-md">
+          季節の風味、催し、店舗の佇まい。Café harmony を深く知るための3つの扉。
+        </p>
+</div>
+<!-- Bento-style 3 Entry Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- a. Menu Card -->
+<a aria-label="こだわりメニューを見る" class="group bg-surface-container-lowest rounded-2xl overflow-hidden soft-border ceramic-shadow flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" href="menu.html" id="menu-preview">
+<div class="relative h-56 overflow-hidden">
+<img alt="メニュー紹介" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artisanal cafe menu display featuring freshly baked flaky buttermilk scones dusted with sugar, a warm slice of seasonal fruit tart, and a beautifully poured matcha oat latte alongside a glass of dark drip coffee on a sunlit wooden table. Elegant warm editorial styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSK9bUd3dxNDwAqHRSi7SX3WTB3-gH80evkoAhtCXkzDLdIvvXtTZ8H75RyJQ69aK6uis8YJ51tkE4GocO_uEQbmlqW58-VzlpbPbuDG2ad-3PlLfK1LF_rnUg5QdeXwvJfypR1kZI66MYUfuCjTVZHc7T9w1me7_OXd7W5o7u6Fey7a9Fr0nPQSHdyCmRsg_1bXeLvCJYWRlYTSnVsMDVoBR0lP_5PdoL7db8XOUxxpMR-11uIQ"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-3 py-1 rounded-full font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">restaurant_menu</span>
+<span>Menu</span>
+</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-tertiary-container transition-colors mb-2">
+              こだわりメニュー
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow leading-relaxed">
+              自家焙煎ドリップ、季節のラテ、焼きたてスコーンや季節のタルトなど。素材の自然な甘みとコクを引き出した自慢の品々。
+            </p>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-on-tertiary-container font-label-md text-label-md">
+<span>詳しく見る</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- b. News Card -->
+<a aria-label="季節のおしらせ・イベントを見る" class="group bg-surface-container-lowest rounded-2xl overflow-hidden soft-border ceramic-shadow flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" href="news.html" id="news-preview">
+<div class="relative h-56 overflow-hidden">
+<img alt="季節のおしらせ紹介" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An inviting cafe workshop setting where participants are learning coffee cupping and tasting from an artisan barista. Hand-written seasonal event blackboard announcing autumn seasonal blend and upcoming brewing seminar in warm afternoon light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3-O8hAj1yi8avMy8DRiWtR7cSBmKb0GldfcXTIwLKyH88dMAv1Wot_MY70vZkqjiF5goGmgra8U1eNA1PO7htVAgW96Hhnfg7TBCNf_qH9HkSeRZ3fw6wQ61pbFoIKm4Jth6dIWYTMlduEJgg4R1KqTUZwj_qoPczBvJuh_In55DHjdZtjUjomKqvfZgzjHXBRNd_HB1dq1n8l_vcsil7HgR95XB63hwRoedoVhw2weA4r-3zsg"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-3 py-1 rounded-full font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">event_note</span>
+<span>News &amp; Events</span>
+</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-tertiary-container transition-colors mb-2">
+              季節のおしらせ・イベント
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow leading-relaxed">
+              今月の限定ブレンドや珈琲ドリップワークショップ、週末の焼き菓子市、定休日や営業時間変更のご案内です。
+            </p>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-on-tertiary-container font-label-md text-label-md">
+<span>最新情報を確認</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- c. Access Card -->
+<a aria-label="店舗情報・アクセスを見る" class="group bg-surface-container-lowest rounded-2xl overflow-hidden soft-border ceramic-shadow flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" href="access.html" id="access-preview">
+<div class="relative h-56 overflow-hidden">
+<img alt="店舗情報・アクセス紹介" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Exterior storefront of an elegant boutique Japanese cafe nestled on a quiet sunlit cobblestone lane with potted plants, large warm glass facade, brass door handle, wooden bench, and soft warm interior lights welcoming guests." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuXmSQNlnT-gry8cJPUhHpaUnn3C82ullKBj8jKROd1yrWDeRWhnBO9CKyg1ioRxffqMHUS00mAt-IBOYwnWAHEcgA-HtSQ1nr5W2xXxaOCUWNQU7vU5t_kiU7D9NIYKQpAm6PXfpxmjY2sKiFsH9KJWJ-XJ9zQuDM4ZhnxGv1g30s1q5YSm01CJ-zUDLEioqYVDL9igciMjhp9mk0_PWBIKHtIlPspXpn_1X8kRDL1gKSdWIFiw"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-3 py-1 rounded-full font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">location_on</span>
+<span>Access</span>
+</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-on-tertiary-container transition-colors mb-2">
+              店舗情報・アクセス
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow leading-relaxed">
+              反町駅から徒歩8分。路地裏に佇む隠れ家のような店内へのアクセス、営業時間、周辺地図やGoogleマップをご案内。
+            </p>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-on-tertiary-container font-label-md text-label-md">
+<span>道順・営業時間を見る</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Reservation Quick Section (Target of CTA) -->
+<section class="py-12 bg-surface-container-low border-t border-outline-variant/30" id="reservation">
+<div class="max-w-4xl mx-auto px-gutter-mobile md:px-gutter text-center">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl soft-border ceramic-shadow">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-3">chair</span>
+<h3 class="font-headline-md text-headline-md text-primary font-medium mb-3">お席のご予約</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-lg mx-auto leading-relaxed">
+          穏やかな読書の時間、大切な方との語らいに。混雑する週末やカフェタイムも、事前予約でゆったりとお過ごしいただけます。
+        </p>
+<div class="inline-flex flex-col sm:flex-row items-center gap-3">
+<a class="bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg px-8 py-3.5 rounded-full shadow-md hover:opacity-90 active:scale-[0.99] transition-all flex items-center gap-2" href="reservation.html">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>席を予約する (オンライン受付)</span>
+</a>
+<span class="text-body-sm font-body-sm text-outline">※ 当日のお席はお電話でも承ります</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Common Footer (共通フッター) -->
+<footer class="bg-surface-container border-t border-outline-variant/30 text-on-surface">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter py-space-xl flex flex-col gap-space-lg">
+<!-- Top Section: Brand + Store Info + Links -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Brand Logo & Concept Summary -->
+<div class="lg:col-span-5">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-on-tertiary-container">local_cafe</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">Café harmony</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed mb-6">
+            日常に、心地よい調和と温もりを。<br/>
+            厳選したスペシャリティコーヒーと手作りのお菓子で、静かで満たされたひとときをお届けするクラフトカフェです。
+          </p>
+<!-- SNS Icons -->
+<div class="flex items-center gap-3 text-on-surface-variant">
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- X (Twitter) -->
+<a aria-label="X (旧Twitter)" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- LINE -->
+<a aria-label="LINE" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</a>
+</div>
+</div>
+<!-- Middle: Store Information -->
+<div class="lg:col-span-4">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">店舗情報</h4>
+<dl class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+<dt class="inline text-primary font-medium">営業時間：</dt>
+<dd class="inline">10:00〜19:00 (L.O. 18:30)</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">定休日：</dt>
+<dd class="inline">水曜日</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">所在地：</dt>
+<dd class="inline">神奈川県横浜市神奈川区反町一丁目１５</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">電話番号：</dt>
+<dd class="inline"><a class="hover:text-on-tertiary-container transition-colors" href="tel:0451234567">045-123-4567</a></dd>
+</div>
+</dl>
+</div>
+<!-- Right: Links List -->
+<div class="lg:col-span-3">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">ナビゲーション</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="index.html">トップページ</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="story.html">こだわり・ストーリー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="menu.html">こだわりメニュー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="news.html">季節のおしらせ・イベント</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="access.html">店舗情報・アクセス</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="reservation.html">席を予約する</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="#">プライバシーポリシー</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar: Copyright -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-outline gap-4">
+<span>© Café harmony. All rights reserved.</span>
+<span>Crafted with peace and care in Yokohama.</span>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions: Drawer Toggle Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openBtn = document.getElementById('openDrawerBtn');
+      const closeBtn = document.getElementById('closeDrawerBtn');
+      const drawer = document.getElementById('navDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+
+      function openDrawer() {
+        drawer.classList.remove('-translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeDrawer() {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      // Close on navigation click inside drawer
+      const drawerLinks = drawer.querySelectorAll('a');
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+</body></html>
