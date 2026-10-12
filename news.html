@@ -125,7 +125,20 @@
       box-shadow: 0 10px 30px -10px rgba(43, 30, 22, 0.06);
     }
   </style>
-</head>
+<style>
+    /* ワークショップの写真は枠内を拡大して中心部だけを表示 */
+    .workshop-photo-crop {
+      object-fit: cover;
+      object-position: center 54%;
+      transform: scale(1.22);
+      transform-origin: center center;
+    }
+    .group:hover .workshop-photo-crop { transform: scale(1.26); }
+    @media (max-width: 767px) {
+      .workshop-photo-crop { transform: scale(1.18); }
+      .group:hover .workshop-photo-crop { transform: scale(1.22); }
+    }
+</style></head>
 <body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen flex flex-col justify-between">
 <!-- ================= TOP APP BAR (HEADER) ================= -->
 <header class="bg-surface docked full-width top-0 sticky z-40 border-b border-outline-variant/30 shadow-sm backdrop-blur-md bg-opacity-95">
@@ -216,26 +229,26 @@
 </header>
 <!-- Filter & Category Quick Switcher (Soft Ceramic Pill styling) -->
 <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-space-lg no-scrollbar">
-<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-surface transition-all shrink-0">
+<a class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-surface transition-all shrink-0 inline-block" href="#articles">
         すべて
-      </button>
-<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0">
+      </a>
+<a class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0 inline-block" href="#seasonal-menu">
         季節の限定メニュー
-      </button>
-<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0">
+      </a>
+<a class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0 inline-block" href="#events">
         イベント・講座
-      </button>
-<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0">
+      </a>
+<a class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0 inline-block" href="#notices">
         お知らせ
-      </button>
-<button class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0">
+      </a>
+<a class="px-4 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shrink-0 inline-block" href="#coffee-beans">
         珈琲豆入荷
-      </button>
+      </a>
 </div>
 <!-- 2. News Articles Collection (Responsive Asymmetric & Bento-Inspired Layout) -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg md:gap-8 items-stretch mb-space-xl">
+<div id="articles" class="grid grid-cols-1 md:grid-cols-12 gap-space-lg md:gap-8 items-stretch mb-space-xl scroll-mt-24">
 <!-- Article 1: Featured Card (Autumn Sweets Fair) - 7 Cols Desktop -->
-<article class="md:col-span-7 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col group">
+<article id="seasonal-menu" class="scroll-mt-24 md:col-span-7 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col group">
 <div class="relative aspect-[16/10] overflow-hidden bg-surface-container-high">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An artisanal dessert plate placed on an untreated light wood table in a sun-drenched café. The centerpiece is a delicate autumn tart featuring ripe sliced figs and smooth Japanese chestnut purée topped with light gold flakes, surrounded by quiet earthenware ceramics and morning sunlight casting soft shadows in a tranquil cream and earthy terracotta aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClj30amSDUayaPhdOyTqdSXm00i27JMAOcZqi4SZnrtphz62I96-ZzxXOBVfwmahpILavt35SJxi-gKIAY9fvf6Ex5ge9gB5BdDxId2rHqwkQ92kToYkZKQMPkZqT5Uh2XF0MjhCJmg9pHU9KqQbKxmgUbOAhQuz48qCzc7mQiybX6Huv2f1P6moPv6Yq7rJgtk8IaHwjfLKyAZxV8VceidXy2_KMkT4hWPY3Rj9oqzm41sW-cwA"/>
 <div class="absolute top-4 left-4">
@@ -257,24 +270,20 @@
               地元農園から直送された熟度満点の旬の無花果と、丁寧に裏ごしした和栗のペーストをふんだんに使った贅沢な秋のタルト＆モンブランパフェ。深煎りのエチオピアや深みのあるブレンド珈琲との特別なペアリングをご用意しました。
             </p>
 </div>
-<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center">
 <span class="font-label-sm text-label-sm text-on-surface-variant">開催期間: 10/18(金) 〜 11/24(日)</span>
-<span class="inline-flex items-center font-label-md text-label-md text-primary group-hover:translate-x-1 transition-transform">
-              詳細を見る
-              <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward">arrow_forward</span>
-</span>
+
 </div>
 </div>
 </article>
 <!-- Article 2: Workshop Card (Hand Drip) - 5 Cols Desktop -->
-<article class="md:col-span-5 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col group">
+<article id="events" class="scroll-mt-24 md:col-span-5 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col group">
 <div class="relative aspect-[16/10] md:aspect-[4/3] overflow-hidden bg-surface-container-high">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close-up photograph of a barista hands carefully pouring hot water from a copper kettle into a ceramic coffee dripper in a calm, warm artisanal cafe setting. Soft natural linen textures, subtle steam rising, wooden counter, and a palette of warm beige, deep coffee tones, and organic sage accents create a serene craftsmanship atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDejI3kLVz9cRwJexVMqFxUZHGLC3muuhm53UIc2Jy0SYTKxZnwqE8EWryuBXdta415BJlEJWxsNOCjIISV-O6rsGTDKE0tOoO_WQOoaVo5uj4_gDTA_oiGyb7PqeucfWbqGBz3qSD6fKlOwliwnMm9G4oSNPL-EZ4oRw9IR7hzVnaN54StjhcNpE8ABaTOhd1YHY3i75OQkJc7tvr-eU-DiiMT4k-ILPNlRzPbHFTzm7rQeImhPw"/>
+<img alt="珈琲のハンドドリップを行うバリスタの手元" class="w-full h-full object-cover transition-transform duration-700 ease-out workshop-photo-crop" data-alt="Close-up photograph of a barista hands carefully pouring hot water from a copper kettle into a ceramic coffee dripper in a calm, warm artisanal cafe setting. Soft natural linen textures, subtle steam rising, wooden counter, and a palette of warm beige, deep coffee tones, and organic sage accents create a serene craftsmanship atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDejI3kLVz9cRwJexVMqFxUZHGLC3muuhm53UIc2Jy0SYTKxZnwqE8EWryuBXdta415BJlEJWxsNOCjIISV-O6rsGTDKE0tOoO_WQOoaVo5uj4_gDTA_oiGyb7PqeucfWbqGBz3qSD6fKlOwliwnMm9G4oSNPL-EZ4oRw9IR7hzVnaN54StjhcNpE8ABaTOhd1YHY3i75OQkJc7tvr-eU-DiiMT4k-ILPNlRzPbHFTzm7rQeImhPw"/>
 <div class="absolute top-4 left-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant shadow-sm backdrop-blur-md">
-              イベント
-            </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant shadow-sm backdrop-blur-md">イベント</span>
 </div>
+
 </div>
 <div class="p-space-md md:p-space-lg flex flex-col justify-between flex-grow">
 <div>
@@ -289,17 +298,14 @@
               豆の挽き具合とお湯の温度、注ぎ方で変わる風味のグラデーションを体験する少人数制の体験型セミナー。初心者の方でも自宅で極上の1杯を淹れられるコツを、当店のヘッドバリスタが丁寧にお教えします。
             </p>
 </div>
-<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center">
 <span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">定員: 各回6名様（要予約）</span>
-<span class="inline-flex items-center font-label-md text-label-md text-primary group-hover:translate-x-1 transition-transform">
-              詳細を見る
-              <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward">arrow_forward</span>
-</span>
+
 </div>
 </div>
 </article>
 <!-- Article 3: Text-Focused Notice Card (11月営業案内) - 5 Cols Desktop -->
-<article class="md:col-span-5 bg-surface-container-low border border-outline-variant/40 rounded-xl p-space-md md:p-space-lg ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col justify-between group">
+<article id="notices" class="scroll-mt-24 md:col-span-5 bg-surface-container-low border border-outline-variant/40 rounded-xl p-space-md md:p-space-lg ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col justify-between group">
 <div>
 <div class="flex items-center justify-between gap-2 mb-3">
 <span class="inline-flex items-center px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">
@@ -328,15 +334,10 @@
 </div>
 </div>
 </div>
-<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-end">
-<span class="inline-flex items-center font-label-md text-label-md text-primary group-hover:translate-x-1 transition-transform">
-            カレンダーを見る
-            <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward">arrow_forward</span>
-</span>
-</div>
+
 </article>
 <!-- Article 4: Single Origin Beans Arrival - 7 Cols Desktop (Horizontal Layout on Large Screen) -->
-<article class="md:col-span-7 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col sm:flex-row group">
+<article id="coffee-beans" class="scroll-mt-24 md:col-span-7 bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden ceramic-shadow hover:border-outline-variant transition-all duration-300 flex flex-col sm:flex-row group">
 <div class="sm:w-5/12 relative aspect-[16/10] sm:aspect-auto overflow-hidden bg-surface-container-high shrink-0">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Freshly roasted specialty coffee beans scattered across a handcrafted natural stone slab next to a minimal linen pouch with clean artisanal lettering. Soft gentle morning daylight illuminating the glossy texture of Ethiopian Yirgacheffe beans with warm honey and caramel undertones, shot in an elegant minimalist editorial cafe visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaf0AxeTCHIyGtCluD3yOsYzdpWeekEy21Mja3PfmFTgvwxH17x9rL5-p9xCb9yJDEt2yfT-g9e-ApmPrK3Vy3DWH69eMDp0PP7KbmQYKosjaVGnyYhNXArbH-RA4kTTN78YhkKrG9NMvjXjZGYW5XCIGibWcOAAGMnqjh32kt_uPgP5umPXCNrboYM-_QZ_5cNnwii4n38PUtgHajF3RJdX7GbApkblL07NBc95KimjUgdEC47A"/>
 <div class="absolute top-4 left-4 sm:top-3 sm:left-3">
@@ -364,12 +365,9 @@
 <span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-[#EFE8DC] text-[#5A4D45]">Bergamot Honey</span>
 </div>
 </div>
-<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center">
 <span class="font-label-sm text-label-sm text-on-surface-variant">店頭およびオンライン販売</span>
-<span class="inline-flex items-center font-label-md text-label-md text-primary group-hover:translate-x-1 transition-transform">
-              豆の詳細を見る
-              <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward">arrow_forward</span>
-</span>
+
 </div>
 </div>
 </article>
@@ -467,7 +465,7 @@
 <li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="news.html">季節のおしらせ・イベント</a></li>
 <li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="access.html">店舗情報・アクセス</a></li>
 <li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="reservation.html">席を予約する</a></li>
-<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="#">プライバシーポリシー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="privacy.html">プライバシーポリシー</a></li>
 </ul>
 </div>
 </div>

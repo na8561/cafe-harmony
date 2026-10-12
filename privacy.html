@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>プライバシーポリシー | Café harmony</title>
+<!-- Google Fonts: Noto Serif & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#93000a",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#dcdad4",
+            "surface-container-high": "#ebe8e2",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#31312d",
+            "tertiary": "#170400",
+            "outline": "#80756f",
+            "on-primary-container": "#988479",
+            "secondary": "#57624c",
+            "on-tertiary-fixed": "#351000",
+            "outline-variant": "#d2c4bd",
+            "on-primary-fixed": "#251911",
+            "tertiary-fixed": "#ffdbcc",
+            "surface-bright": "#fcf9f3",
+            "primary-container": "#2b1e16",
+            "background": "#fcf9f3",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#bfcbb0",
+            "inverse-primary": "#d9c2b5",
+            "tertiary-fixed-dim": "#ffb693",
+            "on-tertiary-container": "#be7653",
+            "surface": "#fcf9f3",
+            "on-secondary-fixed-variant": "#404a36",
+            "on-surface-variant": "#4e4540",
+            "primary-fixed": "#f6ded1",
+            "surface-container": "#f0eee8",
+            "secondary-fixed": "#dbe7cb",
+            "tertiary-container": "#3d1400",
+            "on-background": "#1c1c18",
+            "surface-variant": "#e5e2dc",
+            "on-secondary-fixed": "#151e0d",
+            "surface-tint": "#6c5b51",
+            "on-tertiary-fixed-variant": "#703719",
+            "on-surface": "#1c1c18",
+            "on-secondary-container": "#5d6852",
+            "inverse-on-surface": "#f3f0ea",
+            "secondary-container": "#dbe7cb",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#54433a",
+            "primary": "#110703",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e5e2dc",
+            "primary-fixed-dim": "#d9c2b5",
+            "surface-container-low": "#f6f3ed"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-lg": "1.75rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Noto Serif JP", "Noto Serif", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Noto Serif JP", "Noto Serif", "serif"],
+            "headline-lg": ["Noto Serif JP", "Noto Serif", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Noto Serif JP", "Noto Serif", "serif"],
+            "headline-xl-mobile": ["Noto Serif JP", "Noto Serif", "serif"],
+            "headline-lg-mobile": ["Noto Serif JP", "Noto Serif", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-xl": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "label-lg": ["0.9375rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.4rem", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #fcf9f3;
+      color: #1c1c18;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md selection:bg-tertiary-fixed selection:text-tertiary-container min-h-screen flex flex-col justify-between">
+<!-- ================= TOP APP BAR (HEADER) ================= -->
+<header class="bg-surface docked full-width top-0 sticky z-40 border-b border-outline-variant/30 shadow-sm backdrop-blur-md bg-opacity-95">
+<div class="flex items-center justify-between px-gutter-mobile md:px-gutter max-w-7xl mx-auto w-full h-16">
+<!-- Left: Hamburger Drawer Trigger & Brand Logo -->
+<div class="flex items-center gap-space-sm">
+<button aria-label="ナビゲーションメニューを開く" class="p-2 -ml-2 rounded-lg text-primary hover:bg-surface-container transition-colors focus:outline-none" id="openDrawerBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="flex items-center gap-2 group" href="index.html">
+<span class="material-symbols-outlined text-on-tertiary-container transition-transform group-hover:rotate-12 duration-300">local_cafe</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Café harmony</span>
+</a>
+</div>
+<!-- Center: Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="story.html">ストーリー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="menu.html">メニュー</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="news.html">季節のおしらせ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-200" href="access.html">店舗情報</a>
+</nav>
+<!-- Right: Primary CTA (Table reservation button) -->
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg px-4 py-2 rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-transform duration-150" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+<span class="tracking-wide">席を予約する</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= SLIDE NAVIGATION DRAWER & BACKDROP ================= -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawerBackdrop"></div>
+<aside class="fixed inset-y-0 left-0 w-72 max-w-full z-50 bg-surface-container-low text-primary border-r border-outline-variant/30 shadow-lg -translate-x-full transition-transform duration-300 ease-in-out flex flex-col h-full py-space-lg px-gutter-mobile" id="navDrawer">
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+<a class="font-headline-sm text-headline-sm text-primary tracking-tight hover:text-on-tertiary-container transition-colors" href="index.html">Café harmony</a>
+<button aria-label="メニューを閉じる" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-space-xs mt-space-md">
+<a aria-current="page" class="bg-secondary-container text-on-secondary-container rounded-lg font-medium px-space-md py-space-sm transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="index.html"><span class="material-symbols-outlined text-on-tertiary-container">home</span><span>トップ</span></a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="menu.html">
+<span class="material-symbols-outlined text-on-tertiary-container">restaurant_menu</span>
+<span>メニュー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="news.html">
+<span class="material-symbols-outlined text-secondary">event_note</span>
+<span>季節のおしらせ</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="story.html">
+<span class="material-symbols-outlined text-on-secondary-container">coffee</span>
+<span>こだわり・ストーリー</span>
+</a>
+<a class="text-on-surface px-space-md py-space-sm rounded-lg hover:bg-surface-container-high transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="access.html">
+<span class="material-symbols-outlined text-on-tertiary-container">location_on</span>
+<span>店舗・アクセス</span>
+</a>
+<a aria-current="page" class="bg-secondary-container text-on-secondary-container rounded-lg font-medium px-space-md py-space-sm transition-colors duration-150 flex items-center gap-space-sm font-label-md text-label-md" href="privacy.html">
+<span class="material-symbols-outlined text-on-tertiary-container">policy</span>
+<span>プライバシーポリシー</span>
+</a></nav>
+<div class="mt-auto pt-space-lg border-t border-outline-variant/30">
+<a class="w-full inline-flex items-center justify-center gap-space-xs bg-on-tertiary-container text-surface-container-lowest font-label-lg text-label-lg py-space-sm px-space-md rounded-full shadow-sm hover:opacity-90 active:scale-[0.99] transition-all" href="reservation.html">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>席を予約する</span>
+</a>
+</div>
+</aside>
+<!-- ================= MAIN CONTENT CANVAS ================= -->
+<main class="flex-grow max-w-5xl mx-auto w-full px-gutter-mobile md:px-gutter py-space-md md:py-space-lg">
+<!-- 1. Breadcrumbs -->
+<nav aria-label="パンくずリスト" class="py-2 mb-4">
+<ol class="flex items-center gap-2 text-xs md:text-sm text-on-surface-variant font-label-sm">
+<li>
+<a class="hover:text-on-tertiary-container transition-colors flex items-center gap-1" href="index.html">
+<span class="material-symbols-outlined text-sm">home</span>
+<span>ホーム</span>
+</a>
+</li>
+<li class="text-outline-variant select-none">/</li>
+<li aria-current="page" class="text-primary font-medium">
+          プライバシーポリシー
+        </li>
+</ol>
+</nav>
+<!-- 2. Page Header Card -->
+<section class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-10 mb-8 md:mb-12 shadow-sm relative overflow-hidden">
+<!-- Decorative background accent tint -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-3 md:gap-4">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-tertiary-container font-semibold">
+            PRIVACY POLICY / 個人情報の保護について
+          </span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          プライバシーポリシー
+        </h1>
+<div class="w-12 h-0.5 bg-on-tertiary-container/60 my-1 rounded-full"></div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Café harmony（以下「当店」）は、お客様の個人情報保護の重要性について認識し、個人情報の保護に関する法律（以下「個人情報保護法」）を遵守すると共に、以下のプライバシーポリシー（以下「本ポリシー」）に従い、適切な取扱い及び保護に努めます。日常のひとときに寄り添う心地よい空間と同じように、お客様の信頼とプライバシーを誠実に大切にしてまいります。
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-3 border-t border-outline-variant/20 mt-2 text-xs md:text-sm text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>制定日：2024年10月1日</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>Café harmony 店主</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Policy Clauses Section (Editorial Bento Grid / Modern Cards) -->
+<section class="flex flex-col gap-6 md:gap-8 mb-12">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm transition-all duration-200 hover:border-outline-variant/60">
+<div class="flex items-start gap-4">
+<span class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm">
+            01
+          </span>
+<div class="flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3 flex items-center gap-2">
+<span>第1条（個人情報の定義）</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-3">
+              本ポリシーにおける「個人情報」とは、個人情報保護法にいう個人情報を指すものとし、生存する個人に関する情報であって、氏名、生年月日、住所、電話番号、連絡先、メールアドレスなど、特定の個人を識別できる情報（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含む）を意味します。
+            </p>
+<div class="bg-surface-container-low rounded-lg p-3.5 border border-outline-variant/20 text-sm text-on-surface-variant flex items-start gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-lg mt-0.5">info</span>
+<span>当店は、お客様が快適かつ安心してご利用いただけるよう、最低限必要な情報のみを適正な手段で取得いたします。</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm transition-all duration-200 hover:border-outline-variant/60">
+<div class="flex items-start gap-4">
+<span class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm">
+            02
+          </span>
+<div class="flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">
+              第2条（個人情報の収集方法）
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              当店は、以下の状況においてお客様の個人情報を適正かつ公正な手段によって収集することがあります。
+            </p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-on-surface">
+<li class="bg-surface-container-low/70 border border-outline-variant/20 p-3 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base">table_restaurant</span>
+<span>お席の事前予約・日時指定のお申し込み時</span>
+</li>
+<li class="bg-surface-container-low/70 border border-outline-variant/20 p-3 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base">palette</span>
+<span>ワークショップ・限定イベントへの参加申し込み時</span>
+</li>
+<li class="bg-surface-container-low/70 border border-outline-variant/20 p-3 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base">chat_bubble</span>
+<span>店頭やウェブサイトからのお問い合わせ・ご意見時</span>
+</li>
+<li class="bg-surface-container-low/70 border border-outline-variant/20 p-3 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base">quiz</span>
+<span>店内アンケート・サービス改善アンケートのご記入時</span>
+</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm transition-all duration-200 hover:border-outline-variant/60">
+<div class="flex items-start gap-4">
+<span class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm">
+            03
+          </span>
+<div class="flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">
+              第3条（個人情報の利用目的）
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              当店がお客様から取得した個人情報は、以下の目的の範囲内でのみ適正に利用いたします。
+            </p>
+<div class="space-y-2.5">
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5">check_circle</span>
+<span class="text-sm font-medium text-on-surface">ご予約の確認・ご連絡および席の確保、当日のご案内</span>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5">check_circle</span>
+<span class="text-sm font-medium text-on-surface">お問い合わせへの迅速かつ適切な対応、店舗サービスの向上・品質改善</span>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5">check_circle</span>
+<span class="text-sm font-medium text-on-surface">季節限定メニューや展示・焙煎イベント等のご案内（お客様の事前同意がある場合のみ）</span>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5">check_circle</span>
+<span class="text-sm font-medium text-on-surface">営業時間変更、臨時休業などの重要なお知らせ、または利用規約等の変更の通知</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Article 4 & 5 (2-column layout on Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Article 4 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm flex items-center justify-center">
+                04
+              </span>
+<h2 class="font-headline-sm text-headline-sm text-primary">
+                第4条（個人情報の第三者提供）
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              当店は、法令で認められる場合を除き、あらかじめお客様ご本人の同意を得ることなく、個人情報を第三者に開示または提供することは一切いたしません。ただし、公的機関（裁判所、警察署等）から法令に基づく正当な開示請求を受けた場合を除きます。
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>法令遵守および秘密保持を徹底しています</span>
+</div>
+</article>
+<!-- Article 5 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm flex items-center justify-center">
+                05
+              </span>
+<h2 class="font-headline-sm text-headline-sm text-primary">
+                第5条（安全管理措置）
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              当店は、個人情報の漏洩、滅失または毀損の防止その他の安全管理のために、適切なセキュリティ対策を実施し、管理体制の整備および継続的な見直しを行います。また、個人情報を取り扱う従業員に対して適切な監督・教育を実施いたします。
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">security</span>
+<span>漏洩・紛失防止のための安全保管基準</span>
+</div>
+</article>
+</div>
+<!-- Article 6 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm">
+<div class="flex items-start gap-4">
+<span class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm">
+            06
+          </span>
+<div class="flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">
+              第6条（Cookie及びアクセス解析ツールの利用）
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-3">
+              当サイトでは、サービスの利便性向上およびサイト利用動向の把握のためにCookie（クッキー）およびアクセス解析ツール（Google Analytics等）を利用する場合があります。これらは匿名で収集されており、個人を特定する情報は含まれておりません。
+            </p>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+              ブラウザの設定によりCookieを無効化（オプトアウト）することも可能です。ただし、無効にした場合、一部の機能が正常に動作しない可能性がありますのであらかじめご了承ください。
+            </p>
+</div>
+</div>
+</article>
+<!-- Article 7 & 8 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Article 7 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm flex items-center justify-center">
+              07
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-primary">
+              第7条（開示・訂正・利用停止）
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            お客様ご本人から個人情報の開示、訂正、追加、削除、利用停止のご請求があった場合は、ご本人であることを確認させていただいた上で、法令に基づき遅滞なく誠実に対応いたします。後述のお問い合わせ窓口までお申し付けください。
+          </p>
+</article>
+<!-- Article 8 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 md:p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-tertiary-container font-semibold text-sm flex items-center justify-center">
+              08
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-primary">
+              第8条（本ポリシーの改定）
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            当店は、法令等の変更や事業環境の変化に応じて、本ポリシーを随時見直し、改定することがあります。改定後のプライバシーポリシーは、当サイトに掲載された時点から効力を生じるものとします。
+          </p>
+</article>
+</div>
+</section>
+<!-- 4. Contact Desk Card -->
+<section class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 md:p-10 mb-12 shadow-sm relative overflow-hidden">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-outline-variant/20">
+<div>
+<span class="text-xs font-label-sm font-semibold tracking-wider text-on-tertiary-container uppercase">CONTACT DESK</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">個人情報のお取り扱いに関するお問い合わせ窓口</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+            ご不明な点や開示・訂正のご要望は、下記窓口までお気軽にご連絡ください。
+          </p>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-primary px-5 py-2.5 rounded-full font-label-md text-label-md transition-colors border border-outline-variant/30" href="mailto:privacy@cafe-harmony.example.com">
+<span class="material-symbols-outlined text-base text-on-tertiary-container">mail</span>
+<span>メールでのお問い合わせ</span>
+</a>
+</div>
+</div>
+<!-- Info Details Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 text-sm">
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">storefront</span>
+<div>
+<span class="text-xs text-outline block">店舗名</span>
+<span class="font-medium text-on-surface">Café harmony</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">place</span>
+<div>
+<span class="text-xs text-outline block">所在地</span>
+<span class="text-on-surface">神奈川県横浜市神奈川区反町一丁目１５</span>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">call</span>
+<div>
+<span class="text-xs text-outline block">電話番号</span>
+<span class="font-medium text-on-surface">045-123-4567</span>
+<span class="text-xs text-on-surface-variant block mt-0.5">（受付時間: 10:00〜18:00 / 水曜定休）</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">alternate_email</span>
+<div>
+<span class="text-xs text-outline block">メールアドレス</span>
+<span class="font-medium text-on-surface">privacy@cafe-harmony.example.com</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Reservation CTA Card (Subpage Common Unit) -->
+<section class="bg-primary-container text-surface-bright rounded-2xl p-8 md:p-12 mb-8 shadow-md relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8" id="reservation">
+<div class="max-w-xl">
+<span class="inline-block text-xs font-label-sm font-semibold tracking-widest text-on-tertiary-container uppercase mb-2">RESERVATION</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-surface-bright mb-3">
+          静かで心地よいお席をご用意しております
+        </h2>
+<p class="font-body-md text-body-md text-surface-dim leading-relaxed">
+          丁寧にお淹れするハンドドリップ珈琲と、季節の自家製スイーツ。お一人での静読や大切な方との語らいに、事前予約をご利用いただけます。
+        </p>
+</div>
+<div class="flex-shrink-0 flex flex-col sm:flex-row gap-4 items-center">
+<a class="bg-on-tertiary-container text-surface-bright hover:bg-tertiary-container transition-all px-8 py-3.5 rounded-full font-label-lg text-label-lg shadow-sm flex items-center gap-2 group active:scale-[0.99]" href="reservation.html">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">calendar_month</span>
+<span>お席を予約する</span>
+</a>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-surface-container border-t border-outline-variant/30 text-on-surface">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter py-space-xl flex flex-col gap-space-lg">
+<!-- Top Section: Brand + Store Info + Links -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Brand Logo & Concept Summary -->
+<div class="lg:col-span-5">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-on-tertiary-container">local_cafe</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">Café harmony</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed mb-6">
+            日常に、心地よい調和と温もりを。<br/>
+            厳選したスペシャリティコーヒーと手作りのお菓子で、静かで満たされたひとときをお届けするクラフトカフェです。
+          </p>
+<!-- SNS Icons -->
+<div class="flex items-center gap-3 text-on-surface-variant">
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- X (Twitter) -->
+<a aria-label="X (旧Twitter)" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- LINE -->
+<a aria-label="LINE" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:text-on-tertiary-container hover:bg-surface-container-lowest transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</a>
+</div>
+</div>
+<!-- Middle: Store Information -->
+<div class="lg:col-span-4">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">店舗情報</h4>
+<dl class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+<dt class="inline text-primary font-medium">営業時間：</dt>
+<dd class="inline">10:00〜19:00 (L.O. 18:30)</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">定休日：</dt>
+<dd class="inline">水曜日</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">所在地：</dt>
+<dd class="inline">神奈川県横浜市神奈川区反町一丁目１５</dd>
+</div>
+<div>
+<dt class="inline text-primary font-medium">電話番号：</dt>
+<dd class="inline"><a class="hover:text-on-tertiary-container transition-colors" href="tel:0451234567">045-123-4567</a></dd>
+</div>
+</dl>
+</div>
+<!-- Right: Links List -->
+<div class="lg:col-span-3">
+<h4 class="font-label-lg text-label-lg text-primary mb-3">ナビゲーション</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="index.html">トップページ</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="story.html">こだわり・ストーリー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="menu.html">こだわりメニュー</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="news.html">季節のおしらせ・イベント</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="access.html">店舗情報・アクセス</a></li>
+<li><a class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="reservation.html">席を予約する</a></li>
+<li><a aria-current="page" class="text-on-surface-variant hover:text-on-tertiary-container transition-colors duration-150" href="privacy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar: Copyright -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-outline gap-4">
+<span>© Café harmony. All rights reserved.</span>
+<span>Crafted with peace and care in Yokohama.</span>
+</div>
+</div>
+</footer>
+<!-- ================= INLINE SCRIPT: DRAWER INTERACTIONS ================= -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openBtn = document.getElementById('openDrawerBtn');
+      const closeBtn = document.getElementById('closeDrawerBtn');
+      const drawer = document.getElementById('navDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+
+      function openDrawer() {
+        drawer.classList.remove('-translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeDrawer() {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      // Close on navigation click inside drawer
+      const drawerLinks = drawer.querySelectorAll('a');
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+</body></html>
